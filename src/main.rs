@@ -85,36 +85,3 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     Ok(())
 }
-
-//for array in chunk.into_arrays() {
-//    let array = array.slice(0, array.len());
-//    let actions: Plan = arrow_array_deserialize_iterator::<Action>(&*array).unwrap().collect();
-
-//    println!("actions: {:#?}", actions);
-//}
-
-//let dt = DataType::Struct(vec![
-//    Field::new(
-//        "target",
-//        DataType::Struct(vec![
-//            Field::new("name", DataType::Utf8, false),
-//            Field::new("value", DataType::Float64, false)
-//        ]),
-//        false
-//    ),
-//    Field::new(
-//        "assignments",
-//        DataType::List(Box::new(Field::new(
-//            "item",
-//            DataType::Struct(vec![
-//                Field::new("name", DataType::Utf8, false),
-//                Field::new("value", DataType::Float64, false)
-//            ]),
-//            false
-//        ))),
-//        false
-//    )
-//]);
-
-//println!("\n{:#?}\n", dt);
-//println!("\n{:#?}\n", schema);
